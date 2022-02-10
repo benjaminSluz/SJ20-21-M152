@@ -2,25 +2,25 @@
 
 <body>
 
-    <button id="continue">Fortfahren</button>
-    <button id="back">Zurück</button>
-    <button id="abort">Abbrechen</button>
-    <button id="restart">Neu Starten</button>
+    <button class="continue inaktiv">Fortfahren</button>
+    <button class="back hide">Zurück</button>
+    <button class="abort">Abbrechen</button>
+    <button class="restart dangerous">Neu Starten</button>
 
     <style type="text/css">
-        #continue {
+        .continue {
             background-color: green;
         }
         
-        #back {
+        .back {
             background-color: orange;
         }
         
-        #abort {
-            background-color: red;
+        .abort {
+            background-color: red !important;
         }
         
-        #restart {
+        .restart {
             background-color: blue;
         }
         
@@ -30,6 +30,22 @@
             border-radius: 4px;
             margin-bottom: 10px;
             padding: 2px 10px;
+        }
+        
+        .inaktiv {
+            background-color: gray;
+        }
+        
+        .hide {
+            visibility: hidden;
+        }
+        
+        button:hover {
+            border-color: red;
+        }
+        
+        .dangerous {
+            background-color: orange;
         }
     </style>
 </body>

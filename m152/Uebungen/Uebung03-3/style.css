@@ -1,0 +1,29 @@
+div.person {
+  display: inline-block;
+  background-color: #777279;
+  -webkit-box-shadow: #777279 1px 1px;
+          box-shadow: #777279 1px 1px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-align: center;
+}
+
+div.person img {
+  border-radius: 50%;
+}
+
+div.person button {
+  display: block;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+div.person .title {
+  font-weight: bold;
+}
+
+div.person:hover {
+  padding: 10px;
+  background-color: darkgreen;
+}
+/*# sourceMappingURL=style.css.map */

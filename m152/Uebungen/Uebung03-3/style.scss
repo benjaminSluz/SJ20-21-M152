@@ -1,0 +1,22 @@
+div.person {
+    display: inline-block;
+    background-color: #777279;
+    box-shadow: #777279 1px 1px;
+    transition: all 1s ease-in-out;
+    img {
+        border-radius: 50%;
+    }
+    button {
+        display: block;
+        width: 100%;
+        background-color: lightgreen;
+    }
+    .title {
+        font-weight: bold;
+    }
+    text-align: center;
+    &:hover {
+        padding: 10px;
+        background-color: darkgreen;
+    }
+}

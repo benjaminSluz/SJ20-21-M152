@@ -1,44 +1,27 @@
-body,
-html {
-  padding: 0;
-  margin: 0;
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    /** Für Aufgabe 1 kannst du von hier... **/
+    /** ...bis hier CSS-Deklarationen hinzufügen. **/
 }
 
-body div,
-html div {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.flex-item {
+    background: tomato;
+    margin: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
 }
 
-body div div,
-html div div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border: 1px solid black;
-  height: 100%;
-}
 
-body #dynamisch div:first-child,
-body #dynamisch div:last-child,
-html #dynamisch div:first-child,
-html #dynamisch div:last-child {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
+/** Für Aufgabe 2 kannst du von hier... **/
 
-body ,
-html {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
 
-body #mindest div :first,
-html #mindest div :first {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-/*# sourceMappingURL=style.css.map */
+/** ...bis hier CSS-Deklarationen hinzufügen. **/

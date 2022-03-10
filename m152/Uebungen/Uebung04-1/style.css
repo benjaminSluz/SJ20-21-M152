@@ -4,6 +4,9 @@
     list-style: none;
     display: flex;
     /** Für Aufgabe 1 kannst du von hier... **/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
     /** ...bis hier CSS-Deklarationen hinzufügen. **/
 }
 

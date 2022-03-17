@@ -36,9 +36,21 @@ header div {
   text-shadow: black 1px 1px;
 }
 
+@media screen and (max-width: 600px) {
+  header div {
+    font-size: 3em;
+  }
+}
+
 main {
   background-color: white;
   padding: 30px 20px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 0;
+  }
 }
 
 footer {
@@ -69,6 +81,13 @@ nav ul {
   list-style: none;
 }
 
+@media screen and (max-width: 600px) {
+  nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 nav ul li {
   width: 20%;
 }
@@ -84,6 +103,12 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a.active {
   background-color: gold;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul li {
+    width: 100%;
+  }
 }
 
 .personlist {
@@ -124,6 +149,14 @@ nav ul li a:hover, nav ul li a.active {
           flex-direction: column;
 }
 
+@media screen and (max-width: 600px) {
+  .person__textcontainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .person__title {
   text-align: center;
   font-weight: bold;
@@ -147,5 +180,29 @@ nav ul li a:hover, nav ul li a.active {
 
 .person__button:hover {
   background-color: gold;
+}
+
+@media screen and (max-width: 1200px) {
+  .person__button {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .person__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .person {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .person {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,9 @@ nav {
     ul {
         display: flex;
         list-style: none;
+        @media screen and (max-width: 600px) {
+            flex-wrap: wrap;
+        }
         li {
             width: 20%;
             a {
@@ -11,10 +14,13 @@ nav {
                 color: black;
                 text-decoration: none;
                 background-color: goldenrod;
-
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     background-color: gold;
                 }
+            }
+            @media screen and (max-width: 600px) {
+                width: 100%;
             }
         }
     }

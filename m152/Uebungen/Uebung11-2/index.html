@@ -9,7 +9,45 @@
 </head>
 
 <body>
+    <div>
+        <video id="video" src="https://github.com/Andi-Moser/SJ20-21-M152/raw/master/m152/Uebungen/Unterlagen/Video.mp4"></video>
+        <button id="playBtn">Play</button>
+        <input type="range" name="volume" id="volume">
+        <select name="speed" id="speed">
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+        </select>
+        <label for="">Loop:
+            <input type="checkbox" name="loop" id="loop">
+        </label>
+    </div>
+    <script>
+        let video = document.getElementById("video")
+        let playBtn = document.getElementById("playBtn")
+        let volume = document.getElementById("volume")
+        let speed = document.getElementById("speed")
+        let loop = document.getElementById("loop")
 
+        playBtn.addEventListener("click", (event) => {
+            if (video.paused) {
+                video.play()
+                playBtn.innerText = "Pause"
+            } else {
+                video.pause()
+                playBtn.innerText = "Play"
+            }
+        })
+        loop.addEventListener("change", (event) => {
+            if (loop.checked) video.loop = true
+            else video.loop = false
+        })
+        speed.addEventListener("change", (event) => {
+
+            video.playbackRate = event.target.value
+        })
+    </script>
 </body>
 
 </html>
